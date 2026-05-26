@@ -1,0 +1,21 @@
+{
+  "name": "@plexusone/design-system",
+  "version": "0.1.0",
+  "description": "Design tokens and brand configuration for PlexusOne",
+  "main": "design-system.json",
+  "exports": {
+    ".": "./design-system.json",
+    "./design-system.json": "./design-system.json"
+  },
+  "files": ["design-system.json"],
+  "scripts": {
+    "lint": "ajv validate --spec=draft2020 --strict=false -s node_modules/@plexusone/design-system-spec/schema/design-system.schema.json -d design-system.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plexusone/plexusone-design-system.git"
+  },
+  "keywords": ["design-system", "design-tokens", "plexusone"],
+  "author": "PlexusOne",
+  "license": "MIT"
+}

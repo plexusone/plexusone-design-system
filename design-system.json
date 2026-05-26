@@ -1,0 +1,238 @@
+{
+  "$schema": "https://plexusone.dev/design-system-spec/v1/schema.json",
+  "meta": {
+    "name": "PlexusOne",
+    "version": "0.1.0",
+    "description": "Design system for PlexusOne - AI Agent Development Platform",
+    "repository": "https://github.com/plexusone/plexusone-design-system",
+    "documentation": "https://plexusone.dev"
+  },
+  "foundations": {
+    "colors": [
+      {
+        "id": "dark",
+        "value": "#0a0e1a",
+        "semantic": "background",
+        "usage": "Primary dark background"
+      },
+      {
+        "id": "navy",
+        "value": "#0f172a",
+        "semantic": "background-secondary",
+        "usage": "Card backgrounds, sections"
+      },
+      {
+        "id": "slate",
+        "value": "#1e293b",
+        "semantic": "background-tertiary",
+        "usage": "Elevated surfaces, inputs"
+      },
+      {
+        "id": "cyan",
+        "value": "#06b6d4",
+        "semantic": "primary",
+        "usage": "Primary accent, links, active states"
+      },
+      {
+        "id": "cyan-light",
+        "value": "#22d3ee",
+        "semantic": "primary-light",
+        "usage": "Hover states, highlights"
+      },
+      {
+        "id": "cyan-dark",
+        "value": "#0891b2",
+        "semantic": "primary-dark",
+        "usage": "Pressed states, borders"
+      },
+      {
+        "id": "purple",
+        "value": "#8b5cf6",
+        "semantic": "accent",
+        "usage": "Secondary accent, focus rings"
+      },
+      {
+        "id": "purple-light",
+        "value": "#a78bfa",
+        "semantic": "accent-light",
+        "usage": "Hover states"
+      },
+      {
+        "id": "purple-dark",
+        "value": "#7c3aed",
+        "semantic": "accent-dark",
+        "usage": "Pressed states"
+      },
+      {
+        "id": "pink",
+        "value": "#ec4899",
+        "semantic": "tertiary",
+        "usage": "Tertiary accent, gradients"
+      },
+      {
+        "id": "pink-light",
+        "value": "#f472b6",
+        "semantic": "tertiary-light",
+        "usage": "Hover states"
+      },
+      {
+        "id": "pink-dark",
+        "value": "#db2777",
+        "semantic": "tertiary-dark",
+        "usage": "Pressed states"
+      },
+      {
+        "id": "violet",
+        "value": "#a855f7",
+        "semantic": "highlight",
+        "usage": "Gradient accent"
+      },
+      {
+        "id": "text",
+        "value": "#f1f5f9",
+        "semantic": "text",
+        "usage": "Primary text on dark backgrounds"
+      },
+      {
+        "id": "text-muted",
+        "value": "#94a3b8",
+        "semantic": "text-muted",
+        "usage": "Secondary text, descriptions"
+      }
+    ],
+    "typography": {
+      "fontFamilies": [
+        {
+          "id": "sans",
+          "value": "Inter, system-ui, -apple-system, sans-serif",
+          "usage": "Body text, UI elements"
+        },
+        {
+          "id": "mono",
+          "value": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace",
+          "usage": "Code blocks, technical content"
+        }
+      ],
+      "fontSizes": [
+        { "id": "xs", "value": "0.75rem" },
+        { "id": "sm", "value": "0.875rem" },
+        { "id": "base", "value": "1rem" },
+        { "id": "lg", "value": "1.125rem" },
+        { "id": "xl", "value": "1.25rem" },
+        { "id": "2xl", "value": "1.5rem" },
+        { "id": "3xl", "value": "1.875rem" },
+        { "id": "4xl", "value": "2.25rem" }
+      ],
+      "fontWeights": [
+        { "id": "normal", "value": 400 },
+        { "id": "medium", "value": 500 },
+        { "id": "semibold", "value": 600 },
+        { "id": "bold", "value": 700 }
+      ],
+      "lineHeights": [
+        { "id": "tight", "value": "1.25" },
+        { "id": "normal", "value": "1.5" },
+        { "id": "relaxed", "value": "1.625" }
+      ]
+    },
+    "spacing": {
+      "baseUnit": "0.25rem",
+      "scale": [
+        { "id": "0", "value": "0" },
+        { "id": "1", "value": "0.25rem" },
+        { "id": "2", "value": "0.5rem" },
+        { "id": "4", "value": "1rem" },
+        { "id": "6", "value": "1.5rem" },
+        { "id": "8", "value": "2rem" },
+        { "id": "12", "value": "3rem" },
+        { "id": "16", "value": "4rem" }
+      ]
+    },
+    "borderRadius": [
+      { "id": "none", "value": "0" },
+      { "id": "sm", "value": "0.125rem" },
+      { "id": "default", "value": "0.25rem" },
+      { "id": "md", "value": "0.375rem" },
+      { "id": "lg", "value": "0.5rem" },
+      { "id": "xl", "value": "0.75rem" },
+      { "id": "full", "value": "9999px" }
+    ]
+  },
+  "brand": {
+    "identity": {
+      "name": "PlexusOne",
+      "tagline": "AI Agent Development Platform",
+      "mission": "Empowering developers to build, deploy, and manage AI agents at scale",
+      "domain": "plexusone.dev",
+      "social": {
+        "github": "https://github.com/plexusone"
+      }
+    },
+    "logos": {
+      "primary": {
+        "description": "PlexusOne wordmark with gradient",
+        "variants": {
+          "gradient": { "svg": "assets/wordmark-gradient.svg", "usage": "Primary on dark backgrounds" },
+          "light": { "svg": "assets/wordmark-light.svg", "usage": "On dark backgrounds" }
+        },
+        "minWidth": "180px",
+        "clearSpace": "1em"
+      },
+      "icon": {
+        "description": "Plexus network icon",
+        "svg": "assets/icon.svg",
+        "favicon": "assets/favicon.svg",
+        "design": {
+          "background": "linear-gradient(135deg, #06b6d4, #8b5cf6, #ec4899)",
+          "foreground": "#ffffff",
+          "cornerRadius": "8px"
+        }
+      }
+    },
+    "navigation": {
+      "brand": {
+        "name": "PlexusOne",
+        "href": "https://plexusone.dev"
+      },
+      "baseUrl": "https://plexusone.dev",
+      "links": [
+        { "id": "libraries", "label": "Libraries", "href": "/libraries" },
+        { "id": "tools", "label": "Tools", "href": "/tools" },
+        { "id": "docs", "label": "Docs", "href": "/docs" }
+      ],
+      "dropdowns": [],
+      "actions": [
+        {
+          "id": "github",
+          "label": "GitHub",
+          "href": "https://github.com/plexusone",
+          "icon": "github",
+          "external": true
+        }
+      ]
+    },
+    "colorCombinations": [
+      {
+        "name": "Dark Canvas",
+        "description": "Primary dark background",
+        "background": "dark",
+        "text": "text",
+        "accent": "cyan"
+      },
+      {
+        "name": "Card Surface",
+        "description": "Elevated card surfaces",
+        "background": "navy",
+        "text": "text",
+        "accent": "purple"
+      },
+      {
+        "name": "Gradient Accent",
+        "description": "Cyan to purple to pink gradient",
+        "background": "dark",
+        "text": "text",
+        "accent": "violet"
+      }
+    ]
+  }
+}
