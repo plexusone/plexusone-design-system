@@ -234,5 +234,70 @@
         "accent": "violet"
       }
     ]
+  },
+  "profiles": {
+    "website": {
+      "description": "Dark website optimized for LCD displays",
+      "inherits": "default",
+      "css": {
+        "prefix": "--plexus",
+        "selector": ":root"
+      }
+    },
+    "marp": {
+      "description": "Brighter colors optimized for projection",
+      "inherits": "default",
+      "colorOverrides": [
+        { "tokenId": "dark", "value": "linear-gradient(135deg, #0a0e1a 0%, #1a237e 50%, #0a0e1a 100%)" },
+        { "tokenId": "cyan", "value": "#00d4ff" },
+        { "tokenId": "pink", "value": "#e040fb" },
+        { "tokenId": "text", "value": "#e8eaf6" }
+      ],
+      "additionalColors": [
+        {
+          "id": "deep-blue",
+          "value": "#1a237e",
+          "semantic": "background-gradient",
+          "usage": "Slide background gradient midpoint"
+        },
+        {
+          "id": "lavender",
+          "value": "#b388ff",
+          "semantic": "heading-secondary",
+          "usage": "H2 headings, code highlights"
+        }
+      ],
+      "additionalTypography": {
+        "fontFamilies": [
+          {
+            "id": "mono",
+            "value": "JetBrains Mono, Courier New, monospace",
+            "usage": "Code blocks in presentations"
+          }
+        ]
+      }
+    },
+    "pdf": {
+      "description": "Print-optimized with light background",
+      "inherits": "default",
+      "colorOverrides": [
+        { "tokenId": "dark", "value": "#ffffff" },
+        { "tokenId": "navy", "value": "#f8fafc" },
+        { "tokenId": "text", "value": "#1e293b" },
+        { "tokenId": "text-muted", "value": "#64748b" }
+      ]
+    }
+  },
+  "output": {
+    "css": {
+      "prefix": "--plexus",
+      "selector": ":root",
+      "mappings": {
+        "colors": "--{prefix}-{id}",
+        "spacing": "--{prefix}-space-{id}",
+        "typography.fontFamilies": "--{prefix}-font-{id}",
+        "borderRadius": "--{prefix}-radius-{id}"
+      }
+    }
   }
 }
