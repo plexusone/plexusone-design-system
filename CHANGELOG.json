@@ -1,0 +1,27 @@
+{
+  "irVersion": "1.0",
+  "project": "plexusone-design-system",
+  "repository": "https://github.com/plexusone/plexusone-design-system",
+  "versioning": "semver",
+  "commitConvention": "conventional",
+  "maintainers": ["johnwang"],
+  "releases": [
+    {
+      "version": "v0.1.0",
+      "date": "2026-05-31",
+      "commit": "0c234f2",
+      "highlights": [
+        { "description": "Initial PlexusOne design system with comprehensive design tokens and output profiles" }
+      ],
+      "added": [
+        { "description": "Design system JSON specification with `$schema` reference", "commit": "7bcab83" },
+        { "description": "Foundation tokens: colors (dark theme palette), typography (Inter/JetBrains Mono), spacing scale, border radius", "commit": "7bcab83" },
+        { "description": "Component tokens: buttons (primary, secondary, ghost variants), inputs, cards with semantic styling", "commit": "7bcab83" },
+        { "description": "Semantic tokens: status colors (success, warning, error, info) and state colors (hover, focus, disabled)", "commit": "7bcab83" },
+        { "description": "Accent color palette: violet, cyan, pink, amber, emerald for branding flexibility", "commit": "7bcab83" },
+        { "description": "Output profiles: website (LCD-optimized), marp (projection-optimized), pdf (print-optimized)", "commit": "0c234f2" },
+        { "description": "CSS variable generation config with customizable prefix, selector, and token mappings", "commit": "0c234f2" }
+      ]
+    }
+  ]
+}
